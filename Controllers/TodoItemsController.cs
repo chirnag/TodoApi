@@ -21,7 +21,7 @@ namespace TodoApi.Controllers
         }
 
         // GET: api/TodoItems
-        [HttpGet("{nag}")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()
         {
             return await _context.TodoItems
